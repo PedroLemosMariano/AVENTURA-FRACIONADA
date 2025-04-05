@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 3
+  tags:
+  - Item
+  - Pet
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: '-'
+    uniqueID: 2599392457
+    locked: 0
+  - name: '-'
+    uniqueID: 3586502683
+    locked: 0
+  - name: '-'
+    uniqueID: 3335644739
+    locked: 0
+  - name: '-'
+    uniqueID: 2191766557
+    locked: 0
+  - name: '-'
+    uniqueID: 1098289569
+    locked: 0
+  - name: AGUA
+    uniqueID: 3200972675
+    locked: 0
+  - name: ONDA
+    uniqueID: 1124580503
+    locked: 0
+  - name: PISO
+    uniqueID: 4226861251
+    locked: 0
+  - name: "VEGETA\xC7\xC3O"
+    uniqueID: 2648003211
+    locked: 0
+  - name: "CONTRU\xC7\xD5ES"
+    uniqueID: 4220635307
+    locked: 0
+  - name: PERSONAGENS
+    uniqueID: 3397960201
+    locked: 0
+  - name: "ADERE\xC7OS"
+    uniqueID: 335112149
+    locked: 0
+  m_RenderingLayers:
+  - Default
