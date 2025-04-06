@@ -1,5 +1,7 @@
 using System.Xml.Linq;
 using UnityEngine;
+using TMPro;
+using System.Collections;
 
 public class ColocaPOnte : MonoBehaviour
 {
@@ -7,6 +9,11 @@ public class ColocaPOnte : MonoBehaviour
     public static ColocaPOnte Instance;
     public GameObject Tijolo;
     public GameObject Pannel;
+    public GameObject PannelFracao;
+    public TextMeshProUGUI TextoFracao;
+    public int numeroAtual;
+    public float valorReferenciaX;
+    public float valorReferenciaY;
 
     public void Coloca()
     {
@@ -15,34 +22,42 @@ public class ColocaPOnte : MonoBehaviour
             case 0:
                 Ponte(0, 0);
                 contadorPonte++;
+                StartCoroutine(Tempo());
                 break;
             case 1:
                 Ponte(-1, 0);
                 contadorPonte++;
+                StartCoroutine(Tempo());
                 break;
             case 2:
                 Ponte(-1, 1);
                 contadorPonte++;
+                StartCoroutine(Tempo());
                 break;
             case 3:
                 Ponte(-1, 2);
                 contadorPonte++;
+                StartCoroutine(Tempo());
                 break;
             case 4:
                 Ponte(0, 1);
                 contadorPonte++;
+                StartCoroutine(Tempo());
                 break;
             case 5:
                 Ponte(0, 2);
                 contadorPonte++;
+                StartCoroutine(Tempo());
                 break;
             case 6:
                 Ponte(1, 1);
                 contadorPonte++;
+                StartCoroutine(Tempo());
                 break;
             case 7:
                 Ponte(1, 2);
                 contadorPonte++;
+                StartCoroutine(Tempo());
                 Destroy(gameObject);
                 break;
             default:
@@ -50,6 +65,14 @@ public class ColocaPOnte : MonoBehaviour
                 Debug.Log("Limite de ponte atingido");
                 break;
         }
+    }
+
+    IEnumerator Tempo()
+    {
+        PannelFracao.SetActive(true);
+        TextoFracao.text = (contadorPonte + numeroAtual).ToString();
+        yield return new WaitForSeconds(2f);
+        PannelFracao.SetActive(false);
     }
 
     private void Awake()
@@ -66,7 +89,7 @@ public class ColocaPOnte : MonoBehaviour
 
     private void Ponte(float a, float b)
     {
-        Vector3 position = new Vector3(22.5f + a, -1.5f + b, 0);
+        Vector3 position = new Vector3(valorReferenciaX + a, valorReferenciaY + b, 0);
         Instantiate(Tijolo, position, Quaternion.identity);
         Debug.Log("Tijolo spawned at position: " + position);
 
