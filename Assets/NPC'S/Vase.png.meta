@@ -124,7 +124,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 15
+        width: 14
         height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -144,9 +144,9 @@ TextureImporter:
       name: Vase_1
       rect:
         serializedVersion: 2
-        x: 15
+        x: 16
         y: 0
-        width: 16
+        width: 14
         height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -166,19 +166,19 @@ TextureImporter:
       name: Vase_2
       rect:
         serializedVersion: 2
-        x: 31
+        x: 32
         y: 0
-        width: 15
+        width: 14
         height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 1.5041915, y: 0.5404303}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 829e9c8f600a18f70800000000000000
+      spriteID: 9b09dc84ad2284b4ab4566787a8d621f
       internalID: 9187800666616752424
       vertices: []
       indices: 
@@ -188,7 +188,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: bf337640643645d459ace1690ec85792
     internalID: 0
     vertices: []
     indices: 

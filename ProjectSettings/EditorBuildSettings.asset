@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/VILA.unity
     guid: 7d5d3cbf8d423684bbbd9cc50bbdbb45
   - enabled: 1
-    path: Assets/Scenes/VILA-FASE.unity
+    path: "Assets/Scenes/VILA-MATEM\xC1TICA.unity"
     guid: ff691c9110133c0438fc958d1cb6d89f
   - enabled: 1
     path: Assets/Scenes/FINAL-CASTELO.unity
