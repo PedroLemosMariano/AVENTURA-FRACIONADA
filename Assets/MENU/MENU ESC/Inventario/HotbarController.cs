@@ -40,7 +40,7 @@ public class HotbarController : MonoBehaviour
         if (slot.currentItem != null)
         {
             Item item = slot.currentItem.GetComponent<Item>();
-            item.UseItem();
+            item.UseItem(index);
         }
     }
 

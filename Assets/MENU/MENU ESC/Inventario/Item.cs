@@ -5,11 +5,21 @@ public class Item : MonoBehaviour
 {
     public int ID;
     public string Name;
+    public int contador = 0;
 
-    public virtual void UseItem()
+    public virtual void UseItem(int index)
     {
-        // Implement item usage logic here
-        Debug.Log($"Using item: {Name}");
+        Debug.Log($"Using item: {Name} INDEX: {index}");
+
+        if(Name == "PONTE")
+        {
+            ColocaPOnte.Instance.Coloca();
+            contador++;
+            if (contador == 2)
+            {
+                Destroy(gameObject);
+            }
+        }
     }
 
     public virtual void Pickup()

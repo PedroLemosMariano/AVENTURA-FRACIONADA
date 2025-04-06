@@ -16,7 +16,7 @@ public class NPC : MonoBehaviour, IInteractable
 
     public void Start()
     {
-        portraitImage.sprite = GetComponent<SpriteRenderer>().sprite;
+       
     }
 
     public bool CanInteract()
@@ -42,16 +42,8 @@ public class NPC : MonoBehaviour, IInteractable
         dialogueText.color = Color.white;
 
         nameText.SetText(dialogueData.npcName);
-        dialogueData.npcPortrait = portraitImage.sprite;
-
-        if (portraitImage.sprite != null)
-        {
-            dialogueData.npcPortrait = portraitImage.sprite;
-        }
-        else
-        {
-            Debug.LogWarning("NPC " + dialogueData.npcName + " não tem um retrato definido.");
-        }
+        
+        portraitImage.sprite = dialogueData.npcPortrait;
 
         dialoguePanel.SetActive(true);
         PauseController.SetPause(true);
