@@ -1,4 +1,3 @@
-using System.Xml.Linq;
 using UnityEngine;
 using TMPro;
 using System.Collections;
@@ -65,6 +64,34 @@ public class ColocaPOnte : MonoBehaviour
                 Debug.Log("Limite de ponte atingido");
                 break;
         }
+    }
+
+    public void ColocaTudo()
+    {
+        Ponte(0, 0);
+        Ponte(-1, 0);
+        Ponte(-1, 1);
+        Ponte(-1, 2);
+        Ponte(0, 1);
+        Ponte(0, 2);
+        Ponte(1, 1);
+        Ponte(1, 2);
+        Ponte(2, 0);
+        Ponte(1, 0);
+        Ponte(3, 0);
+        Ponte(2, 1);
+
+        StartCoroutine(PainelApareceComTempoDepoisDestroi());
+
+    }
+    IEnumerator PainelApareceComTempoDepoisDestroi()
+    {
+        gameObject.GetComponent<BoxCollider2D>().enabled = false;
+        gameObject.GetComponent<CapsuleCollider2D>().enabled = false;
+        PannelFracao.SetActive(true);
+        TextoFracao.text = (contadorPonte + numeroAtual).ToString();
+        yield return new WaitForSeconds(2f);
+        PannelFracao.SetActive(false);
     }
 
     IEnumerator Tempo()

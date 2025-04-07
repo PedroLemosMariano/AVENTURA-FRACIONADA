@@ -14,9 +14,9 @@ public class Item : MonoBehaviour
 
         if(Name == "PONTE")
         {
-            ColocaPOnte.Instance.Coloca();
+            ColocaPOnte.Instance.ColocaTudo();
             contador++;
-            if (contador == 2)
+            if (contador == 1)
             {
                 Destroy(gameObject);
             }

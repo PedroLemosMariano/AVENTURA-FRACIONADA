@@ -18,7 +18,8 @@ public class PlayerItemCollector : MonoBehaviour
             Item item = collision.GetComponent<Item>();
             if (item != null)
             {
-                bool itemAdded = inventoryController.AddItem(item.gameObject);
+                //bool itemAdded = inventoryController.AddItem(item.gameObject);
+                bool itemAdded = inventoryController.AddItemHotbar(item.gameObject);
                 if (itemAdded)
                 {
                     item.Pickup();

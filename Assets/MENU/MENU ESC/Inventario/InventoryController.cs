@@ -10,6 +10,7 @@ public class InventoryController : MonoBehaviour
     public GameObject slotPrefab;
     public int slotCount;
     public GameObject[] itemPrefab;
+    public GameObject HotbarPannel;
 
     void Start()
     {
@@ -34,6 +35,24 @@ public class InventoryController : MonoBehaviour
     public bool AddItem(GameObject itemPrefab)
     {
         foreach(Transform slotTransform in inventoryPanel.transform)
+        {
+            Slot slot = slotTransform.GetComponent<Slot>();
+            if (slot != null && slot.currentItem == null)
+            {
+                GameObject newItem = Instantiate(itemPrefab, slot.transform);
+                newItem.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
+                slot.currentItem = newItem;
+                return true;
+            }
+        }
+
+        Debug.Log("Inventário cheio!");
+        return false;
+    }
+
+    public bool AddItemHotbar(GameObject itemPrefab)
+    {
+        foreach (Transform slotTransform in HotbarPannel.transform)
         {
             Slot slot = slotTransform.GetComponent<Slot>();
             if (slot != null && slot.currentItem == null)
