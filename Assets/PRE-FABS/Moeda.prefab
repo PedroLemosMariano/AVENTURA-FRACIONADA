@@ -41,7 +41,7 @@ PrefabInstance:
     - target: {fileID: -1745509802912461060, guid: 1be141731ee6a4741b0d459b8e50fba5,
         type: 3}
       propertyPath: Name
-      value: COIN
+      value: MOEDA
       objectReference: {fileID: 0}
     - target: {fileID: -1745509802912461060, guid: 1be141731ee6a4741b0d459b8e50fba5,
         type: 3}
