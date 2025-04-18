@@ -16,17 +16,32 @@ public class PlayerItemCollector : MonoBehaviour
         if (collision.CompareTag("Item"))
         {
             Item item = collision.GetComponent<Item>();
-            if (item != null)
+            if(item.pego == true)
             {
-                //bool itemAdded = inventoryController.AddItem(item.gameObject);
-                bool itemAdded = inventoryController.AddItemHotbar(item.gameObject);
-                if (itemAdded)
-                {
-                    item.Pickup();
-                    Destroy(collision.gameObject);
-                }
+                Debug.Log("Item já pego");
+                return;
             }
 
+            if (item.Name == "MOEDA")
+            {
+                item.pego = true;
+                PlayerPrefs.SetFloat("moeda", PlayerPrefs.GetInt("moeda") + 1f);
+                Debug.Log("MOEDA COLETADA");
+                Destroy(collision.gameObject);
+            }
+            else
+            {
+                if (item != null)
+                {
+                    //bool itemAdded = inventoryController.AddItem(item.gameObject);
+                    bool itemAdded = inventoryController.AddItemHotbar(item.gameObject);
+                    if (itemAdded)
+                    {
+                        item.Pickup();
+                        Destroy(collision.gameObject);
+                    }
+                }
+            }
         }
     }
 }

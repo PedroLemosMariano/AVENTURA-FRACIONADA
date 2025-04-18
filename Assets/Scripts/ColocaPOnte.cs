@@ -84,6 +84,13 @@ public class ColocaPOnte : MonoBehaviour
         StartCoroutine(PainelApareceComTempoDepoisDestroi());
 
     }
+
+    public void ColocaEscada()
+    {
+        Ponte(0, 0);
+        StartCoroutine(PainelApareceComTempoDepoisDestroi());
+    }
+
     IEnumerator PainelApareceComTempoDepoisDestroi()
     {
         gameObject.GetComponent<BoxCollider2D>().enabled = false;

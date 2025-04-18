@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -11,6 +12,8 @@ public class InventoryController : MonoBehaviour
     public int slotCount;
     public GameObject[] itemPrefab;
     public GameObject HotbarPannel;
+    public TextMeshProUGUI moedasTxt;
+    public bool resetaMoedas;
 
     void Start()
     {
@@ -30,6 +33,16 @@ public class InventoryController : MonoBehaviour
                 item.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
             }
         }
+
+        if (resetaMoedas)
+        {
+            PlayerPrefs.SetFloat("moeda", 0);
+        }
+    }
+
+    private void Update()
+    {
+        moedasTxt.text = "MOEDAS: "+PlayerPrefs.GetFloat("moeda").ToString();
     }
 
     public bool AddItem(GameObject itemPrefab)

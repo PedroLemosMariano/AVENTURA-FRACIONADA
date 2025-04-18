@@ -120,7 +120,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 1
-  Name: ESCADA
+  Name: ESCADARIA
+  contador: 0
 --- !u!212 &3763057824161302811
 SpriteRenderer:
   m_ObjectHideFlags: 0
