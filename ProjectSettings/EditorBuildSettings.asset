@@ -11,6 +11,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/cena-principal.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/QuizTrocaFase.unity
+    guid: 1c483c6d34d9ac84b92344f518812080
+  - enabled: 1
+    path: Assets/Scenes/CIDADE.unity
+    guid: 1e692b3261f0dee48a61b9250bbaa928
+  - enabled: 1
+    path: Assets/Scenes/PIZZARIA.unity
+    guid: f96b597967e0ea44e8fb7ae85e68dafb
   - enabled: 0
     path: Assets/Scenes/VILA.unity
     guid: 7d5d3cbf8d423684bbbd9cc50bbdbb45

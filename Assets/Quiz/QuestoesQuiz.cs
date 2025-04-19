@@ -1,12 +1,14 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class QuestoesQuiz : MonoBehaviour
 {
     public int idTema;
 
     public int numQuestoes;
+    public Image imagemAuxilio;
     public TextMeshProUGUI textoPergunta;
     public TextMeshProUGUI textoRespostaA;
     public TextMeshProUGUI textoRespostaB;
@@ -14,6 +16,7 @@ public class QuestoesQuiz : MonoBehaviour
     public TextMeshProUGUI textoRespostaD;
     //public TextMeshProUGUI dicaComprada;
 
+    public Sprite[] representaVisual;
     public string[] perguntas;
     public string[] alternativaA;
     public string[] alternativaB;
@@ -33,6 +36,7 @@ public class QuestoesQuiz : MonoBehaviour
         idPergunta = 0;
         questoes = perguntas.Length;
 
+        imagemAuxilio.sprite = representaVisual[idPergunta];
         textoPergunta.text = perguntas[idPergunta];
         textoRespostaA.text = alternativaA[idPergunta];
         textoRespostaB.text = alternativaB[idPergunta];
@@ -77,6 +81,7 @@ public class QuestoesQuiz : MonoBehaviour
         idPergunta++;
         if (idPergunta < questoes)
         {
+            imagemAuxilio.sprite = representaVisual[idPergunta];
             textoPergunta.text = perguntas[idPergunta];
             textoRespostaA.text = alternativaA[idPergunta];
             textoRespostaB.text = alternativaB[idPergunta];

@@ -271,7 +271,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &203436466
 Transform:
   m_ObjectHideFlags: 0
@@ -1716,7 +1716,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1233555773
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2273,11 +2273,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   idTema: 0
   numQuestoes: 20
+  imagemAuxilio: {fileID: 0}
   textoPergunta: {fileID: 976432582}
   textoRespostaA: {fileID: 1350560632}
   textoRespostaB: {fileID: 308042789}
   textoRespostaC: {fileID: 11521893}
   textoRespostaD: {fileID: 505816816}
+  representaVisual: []
   perguntas:
   - "QUAL A FRA\xC7\xC3O CORRESPONDENTE A METADE DA PONTE ?"
   alternativaA:

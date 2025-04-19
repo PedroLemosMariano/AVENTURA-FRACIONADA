@@ -6244,6 +6244,8 @@ MonoBehaviour:
   dialogueText: {fileID: 691323499}
   nameText: {fileID: 1998525684}
   portraitImage: {fileID: 59338346}
+  comecaQuiz: 0
+  QuizzPannel: {fileID: 0}
 --- !u!95 &730768536
 Animator:
   serializedVersion: 7

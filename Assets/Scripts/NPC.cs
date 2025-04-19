@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class NPC : MonoBehaviour, IInteractable
@@ -13,6 +14,9 @@ public class NPC : MonoBehaviour, IInteractable
 
     private int dialogueIndex;
     private bool isTyping, isDialogueActive;
+
+    public bool comecaQuiz;
+    public GameObject QuizzPannel;
 
     public void Start()
     {
@@ -103,10 +107,21 @@ public class NPC : MonoBehaviour, IInteractable
 
     public void EndDialogue()
     {
-        StopAllCoroutines();
-        isDialogueActive = false;
-        dialogueText.SetText("");
-        dialoguePanel.SetActive(false);
-        PauseController.SetPause(false);
+        if (comecaQuiz)
+        {
+            QuizzPannel.SetActive(true);
+            dialogueText.SetText("");
+            dialoguePanel.SetActive(false);
+            isDialogueActive = false;
+        }
+        else
+        {
+            StopAllCoroutines();
+            isDialogueActive = false;
+            dialogueText.SetText("");
+            dialoguePanel.SetActive(false);
+            PauseController.SetPause(false);
+        }
+       
     }
 }
