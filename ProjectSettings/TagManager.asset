@@ -79,5 +79,8 @@ TagManager:
   - name: "ADERE\xC7OS"
     uniqueID: 335112149
     locked: 0
+  - name: SABE DEUS OQ
+    uniqueID: 3905608773
+    locked: 0
   m_RenderingLayers:
   - Default

@@ -7998,72 +7998,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: topDown_baseTiles_389
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 560
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a7baf7ba233cc5e4b9f607731e8e1083
-      internalID: 1729356990
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: topDown_baseTiles_390
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 560
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 16a2b71070b3d3e4d86ebe4cfc35ab78
-      internalID: 1890609260
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: topDown_baseTiles_391
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 560
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 93196098fd71cec40889aed685160709
-      internalID: 789950482
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: topDown_baseTiles_392
       rect:
         serializedVersion: 2
@@ -8213,72 +8147,6 @@ TextureImporter:
       bones: []
       spriteID: 484e5fe1eb01c594d9d510595f54e221
       internalID: 1094053862
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: topDown_baseTiles_399
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 544
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 430d2c02f30e20845986f93aeb1a62fa
-      internalID: -711503620
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: topDown_baseTiles_400
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 544
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e663374644f03b04da76d2e3991e2ab1
-      internalID: 2141267010
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: topDown_baseTiles_401
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 544
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b01c47d73e14fee40b3d4dbdfdc02583
-      internalID: 332406787
       vertices: []
       indices: 
       edges: []
@@ -8438,72 +8306,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: topDown_baseTiles_409
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 528
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e921ef52a71f09b4faf300af98930e92
-      internalID: -2052404082
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: topDown_baseTiles_410
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 528
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b79680e14b2103c48b6f2d688214f2c0
-      internalID: -245980445
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: topDown_baseTiles_411
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 528
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 137ed6b55787d944baf856a7e52c188e
-      internalID: -648843079
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: topDown_baseTiles_412
       rect:
         serializedVersion: 2
@@ -8631,72 +8433,6 @@ TextureImporter:
       bones: []
       spriteID: 8f1bd32db63bb0e459a65b3ecf9ce410
       internalID: -2088217690
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: topDown_baseTiles_418
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 512
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6076a7157b643084e822c9aa40f67bdf
-      internalID: -972996565
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: topDown_baseTiles_419
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 512
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9bb27ac8e0926454fbeaf6018a300680
-      internalID: 1366498104
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: topDown_baseTiles_420
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 512
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1c85785799cab2e4db5bd8e0b77e45fc
-      internalID: -794163490
       vertices: []
       indices: 
       edges: []
@@ -12489,8 +12225,8 @@ TextureImporter:
       name: topDown_baseTiles_334
       rect:
         serializedVersion: 2
-        x: 1
-        y: 578
+        x: 0
+        y: 514
         width: 46
         height: 59
       alignment: 0
@@ -12525,6 +12261,28 @@ TextureImporter:
       bones: []
       spriteID: da6302bab44ac914b905ad79dfbc9977
       internalID: 450681355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: topDown_baseTiles_336
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 578
+        width: 46
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ec5b7a8538cc9543be0fcfb91a0a223
+      internalID: -349060974
       vertices: []
       indices: 
       edges: []
