@@ -2271,7 +2271,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d0cc06949e764845ab713960f3a3773, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idTema: 0
+  idTema: 5
   numQuestoes: 20
   imagemAuxilio: {fileID: 0}
   textoPergunta: {fileID: 976432582}

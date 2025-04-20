@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bee1247029a32940974e2cdbe0f7f7a, type: 3}
+  m_Name: DialogoInicial
+  m_EditorClassIdentifier: 
+  npcName: Deyvid
+  npcPortrait: {fileID: -1134060184, guid: 002b00f1a5bf9e54eb5f9e9777475dbc, type: 3}
+  dialogueLines:
+  - "Ol\xE1, meu jovem ! Bem-vindo ao Aventura Fracionada !"
+  - Os portais te ajudam a se mover pelas fases...
+  - "Em algumas delas, voc\xEA precisa completar desafios !"
+  - "Ahhh! Guarde as moedas com sabedoria... Afinal, nunca sabemos quando ser\xE3o
+    necess\xE1rias, n\xE3o \xE9 mesmo ?"
+  autoProgressLines: 01010100
+  autoProgressDelay: 1.5
+  typingSpeed: 0.05
+  voiceSound: {fileID: 8300000, guid: 14abfab17b6b14b4691add23b8e51a83, type: 3}
+  voicePitch: 1

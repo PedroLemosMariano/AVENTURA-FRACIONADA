@@ -8,13 +8,21 @@ public class QuestoesQuiz : MonoBehaviour
     public int idTema;
 
     public int numQuestoes;
+    public bool[] questoesComImagem;
     public Image imagemAuxilio;
     public TextMeshProUGUI textoPergunta;
     public TextMeshProUGUI textoRespostaA;
+    public GameObject botaoRespostaA;
     public TextMeshProUGUI textoRespostaB;
+    public GameObject botaoRespostaB;
     public TextMeshProUGUI textoRespostaC;
+    public GameObject botaoRespostaC;
     public TextMeshProUGUI textoRespostaD;
-    //public TextMeshProUGUI dicaComprada;
+    public GameObject botaoRespostaD;
+
+    public string ProxCena;
+    public bool QuizSimples;
+    public GameObject QuizzPannel;
 
     public Sprite[] representaVisual;
     public string[] perguntas;
@@ -22,58 +30,28 @@ public class QuestoesQuiz : MonoBehaviour
     public string[] alternativaB;
     public string[] alternativaC;
     public string[] alternativaD;
-    public string[] respostaCorreta;
+    public string[] respostaCorreta; // Deve conter "A", "B", "C", "D"
 
     private int idPergunta;
-
     private float acertos;
     private float questoes;
-
-    public string ProxCena;
 
     void Start()
     {
         idPergunta = 0;
         questoes = perguntas.Length;
-
-        imagemAuxilio.sprite = representaVisual[idPergunta];
-        textoPergunta.text = perguntas[idPergunta];
-        textoRespostaA.text = alternativaA[idPergunta];
-        textoRespostaB.text = alternativaB[idPergunta];
-        textoRespostaC.text = alternativaC[idPergunta];
-        textoRespostaD.text = alternativaD[idPergunta];
+        AtualizarPergunta();
     }
 
     public void Resposta(string Alternativa)
     {
-        switch (Alternativa)
+        if (respostaCorreta[idPergunta] == Alternativa)
         {
-            case "A":
-                if (respostaCorreta[idPergunta] == alternativaA[idPergunta])
-                {
-                    acertos++;
-                }
-                break;
-            case "B":
-                if (respostaCorreta[idPergunta] == alternativaB[idPergunta])
-                {
-                    acertos++;
-                }
-                break;
-            case "C":
-                if (respostaCorreta[idPergunta] == alternativaC[idPergunta])
-                {
-                    acertos++;
-                }
-                break;
-            case "D":
-                if (respostaCorreta[idPergunta] == alternativaD[idPergunta])
-                {
-                    acertos++;
-                }
-                break;
+            acertos++;
         }
-        ProximaPergunta();
+
+        DestacarBotaoCorreto();
+        Invoke(nameof(ProximaPergunta), 1f);
     }
 
     void ProximaPergunta()
@@ -81,23 +59,78 @@ public class QuestoesQuiz : MonoBehaviour
         idPergunta++;
         if (idPergunta < questoes)
         {
-            imagemAuxilio.sprite = representaVisual[idPergunta];
-            textoPergunta.text = perguntas[idPergunta];
-            textoRespostaA.text = alternativaA[idPergunta];
-            textoRespostaB.text = alternativaB[idPergunta];
-            textoRespostaC.text = alternativaC[idPergunta];
-            textoRespostaD.text = alternativaD[idPergunta];
+            AtualizarPergunta();
         }
         else
         {
-            SceneManager.LoadScene(ProxCena);
             Debug.Log("Quiz terminado! Acertos: " + acertos + "/" + questoes);
+
+            if (QuizSimples)
+            {
+                QuizzPannel.SetActive(false);
+                PauseController.SetPause(false);
+            }
+            else
+            {
+                PlayerPrefs.SetFloat("Acertos", acertos);
+                PlayerPrefs.SetFloat("TotalQuestoes", questoes);
+                SceneManager.LoadScene(ProxCena);
+            }
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    void AtualizarPergunta()
     {
-        
+        if (imagemAuxilio != null && questoesComImagem.Length > idPergunta && questoesComImagem[idPergunta])
+        {
+            if (representaVisual.Length > idPergunta && representaVisual[idPergunta] != null)
+            {
+                imagemAuxilio.sprite = representaVisual[idPergunta];
+                imagemAuxilio.gameObject.SetActive(true);
+            }
+            else
+            {
+                imagemAuxilio.gameObject.SetActive(false);
+            }
+        }
+        else if (imagemAuxilio != null)
+        {
+            imagemAuxilio.gameObject.SetActive(false);
+        }
+
+        textoPergunta.text = perguntas[idPergunta];
+        textoRespostaA.text = alternativaA[idPergunta];
+        textoRespostaB.text = alternativaB[idPergunta];
+        textoRespostaC.text = alternativaC[idPergunta];
+        textoRespostaD.text = alternativaD[idPergunta];
+
+        ResetarCoresDosBotoes();
+    }
+
+    void DestacarBotaoCorreto()
+    {
+        switch (respostaCorreta[idPergunta])
+        {
+            case "A":
+                botaoRespostaA.GetComponent<Image>().color = Color.green;
+                break;
+            case "B":
+                botaoRespostaB.GetComponent<Image>().color = Color.green;
+                break;
+            case "C":
+                botaoRespostaC.GetComponent<Image>().color = Color.green;
+                break;
+            case "D":
+                botaoRespostaD.GetComponent<Image>().color = Color.green;
+                break;
+        }
+    }
+
+    void ResetarCoresDosBotoes()
+    {
+        botaoRespostaA.GetComponent<Image>().color = Color.white;
+        botaoRespostaB.GetComponent<Image>().color = Color.white;
+        botaoRespostaC.GetComponent<Image>().color = Color.white;
+        botaoRespostaD.GetComponent<Image>().color = Color.white;
     }
 }

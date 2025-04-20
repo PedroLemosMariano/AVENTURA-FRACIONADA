@@ -8075,7 +8075,7 @@ GameObject:
   - component: {fileID: 730768537}
   - component: {fileID: 730768536}
   m_Layer: 4
-  m_Name: "Josu\xE9 Atendente"
+  m_Name: Tia Polly Atendente
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8093,7 +8093,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a13cd9aadf9cfcc468b97d1364dffd5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueData: {fileID: 11400000, guid: a0e8cb83248c5664696d79ddca26984a, type: 2}
+  dialogueData: {fileID: 11400000, guid: 5121989142da8a341acbd61c89486aaa, type: 2}
   dialoguePanel: {fileID: 1029136191}
   dialogueText: {fileID: 691323499}
   nameText: {fileID: 1998525684}
@@ -8135,7 +8135,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_CategoryHash: 0.009161512
-  m_labelHash: 2.4032701e-26
+  m_labelHash: 5.545802e-34
   m_SpriteKey: 0
   m_SpriteHash: 280337513
 --- !u!114 &730768538
@@ -8151,7 +8151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Library: []
-  m_SpriteLibraryAsset: {fileID: 7108339969198208228, guid: 1d3c4cbea3606ce41bfc7dece9ae9e43,
+  m_SpriteLibraryAsset: {fileID: 7108339969198208228, guid: ce403114db09a354499f20bf42d6c109,
     type: 3}
 --- !u!61 &730768540
 BoxCollider2D:
@@ -8191,7 +8191,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.7619048, y: 1.5238096}
+    oldSize: {x: 1, y: 1.1111112}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -8243,9 +8243,9 @@ SpriteRenderer:
   m_SortingLayerID: 1124580503
   m_SortingLayer: 7
   m_SortingOrder: 0
-  m_Sprite: {fileID: 2087751751, guid: f7a81f1f8b94e8b49abd40248595efd9, type: 3}
+  m_Sprite: {fileID: 381631601, guid: 0c187a32c5bde4747be8d00770b07403, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
@@ -8263,7 +8263,7 @@ Transform:
   m_GameObject: {fileID: 730768534}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.13, y: 2.24, z: -0.43938428}
+  m_LocalPosition: {x: -1.16, y: 1.95, z: -0.43938428}
   m_LocalScale: {x: 1.2, y: 1.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8945,8 +8945,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 2.5748, y: 7.2565}
+  m_SizeDelta: {x: 0.4684, y: 7.0226}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &757855651
 MonoBehaviour:
@@ -8968,9 +8968,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '
-
-'
+  m_text: X
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ec59cf3f6e10ec24cb2a94f2bd6ad979, type: 2}
   m_sharedMaterial: {fileID: -5800589495621094560, guid: ec59cf3f6e10ec24cb2a94f2bd6ad979,
@@ -8980,8 +8978,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -8998,8 +8996,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 45
+  m_fontSizeBase: 45
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -10718,7 +10716,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1663299034}
   - {fileID: 730768542}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -13239,12 +13236,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   idTema: 2
   numQuestoes: 2
+  questoesComImagem: 
   imagemAuxilio: {fileID: 1070346894}
   textoPergunta: {fileID: 83664271}
   textoRespostaA: {fileID: 1192610261}
+  botaoRespostaA: {fileID: 0}
   textoRespostaB: {fileID: 1533285888}
+  botaoRespostaB: {fileID: 0}
   textoRespostaC: {fileID: 271835374}
+  botaoRespostaC: {fileID: 0}
   textoRespostaD: {fileID: 1490087323}
+  botaoRespostaD: {fileID: 0}
+  ProxCena: 
+  QuizSimples: 0
+  QuizzPannel: {fileID: 0}
   representaVisual:
   - {fileID: 5675857372675088757, guid: f333a110441c6db419c47d9521c27472, type: 3}
   perguntas:
@@ -13259,7 +13264,6 @@ MonoBehaviour:
   - 4
   respostaCorreta:
   - 4
-  ProxCena: 
 --- !u!1 &1307246478
 GameObject:
   m_ObjectHideFlags: 0
@@ -15393,37 +15397,6 @@ Transform:
   - {fileID: 807639376}
   m_Father: {fileID: 754962515}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1663299033
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1663299034}
-  m_Layer: 0
-  m_Name: WaypointParent
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1663299034
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1663299033}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.26468444, y: -0.082802355, z: 0.0038287044}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1023816721}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1665747234
 GameObject:
   m_ObjectHideFlags: 0
@@ -16175,7 +16148,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 1, g: 0.29153413, b: 0.2216981, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -16198,7 +16171,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 730768535}
         m_TargetAssemblyTypeName: NPC, Assembly-CSharp
-        m_MethodName: EndDialogue
+        m_MethodName: CloseStore
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16228,7 +16201,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -8154498446710104070, guid: b76bf92b51a8a5a459731004b0e35c6c,
+  m_Sprite: {fileID: -2205522050570982886, guid: b76bf92b51a8a5a459731004b0e35c6c,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0

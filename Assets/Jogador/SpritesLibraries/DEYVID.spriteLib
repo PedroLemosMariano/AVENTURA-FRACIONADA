@@ -29,20 +29,8 @@ MonoBehaviour:
       m_FromMain: 0
       m_SpriteOverride: {fileID: 664151367, guid: 002b00f1a5bf9e54eb5f9e9777475dbc,
         type: 3}
-    - m_Name: Idle_3
-      m_Hash: 137906807
-      m_Sprite: {fileID: 866464747, guid: 002b00f1a5bf9e54eb5f9e9777475dbc, type: 3}
-      m_FromMain: 0
-      m_SpriteOverride: {fileID: 866464747, guid: 002b00f1a5bf9e54eb5f9e9777475dbc,
-        type: 3}
-    - m_Name: Idle_4
-      m_Hash: 375185364
-      m_Sprite: {fileID: -140819677, guid: 002b00f1a5bf9e54eb5f9e9777475dbc, type: 3}
-      m_FromMain: 0
-      m_SpriteOverride: {fileID: -140819677, guid: 002b00f1a5bf9e54eb5f9e9777475dbc,
-        type: 3}
     m_FromMain: 0
-    m_EntryOverrideCount: 4
+    m_EntryOverrideCount: 2
   - m_Name: Walk
     m_Hash: 765711723
     m_CategoryList: []
@@ -74,5 +62,5 @@ MonoBehaviour:
     m_FromMain: 0
     m_EntryOverrideCount: 4
   m_PrimaryLibraryGUID: 
-  m_ModificationHash: 638795382853920813
+  m_ModificationHash: 638807426092271872
   m_Version: 1

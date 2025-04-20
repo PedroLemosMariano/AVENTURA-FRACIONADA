@@ -2912,7 +2912,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 67607749}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1288396311}
+        m_TargetAssemblyTypeName: QuestoesQuiz, Assembly-CSharp
+        m_MethodName: Resposta
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: C
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &67607749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6931,7 +6943,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 478280478}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1288396311}
+        m_TargetAssemblyTypeName: QuestoesQuiz, Assembly-CSharp
+        m_MethodName: Resposta
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: D
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &478280478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11604,7 +11628,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1219388589}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1288396311}
+        m_TargetAssemblyTypeName: QuestoesQuiz, Assembly-CSharp
+        m_MethodName: Resposta
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: B
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1219388589
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12147,18 +12183,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d0cc06949e764845ab713960f3a3773, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idTema: 2
-  numQuestoes: 2
+  idTema: 0
+  numQuestoes: 1
+  questoesComImagem: 01
   imagemAuxilio: {fileID: 1070346894}
   textoPergunta: {fileID: 83664271}
   textoRespostaA: {fileID: 1192610261}
+  botaoRespostaA: {fileID: 2135731327}
   textoRespostaB: {fileID: 1533285888}
+  botaoRespostaB: {fileID: 1219388586}
   textoRespostaC: {fileID: 271835374}
+  botaoRespostaC: {fileID: 67607746}
   textoRespostaD: {fileID: 1490087323}
+  botaoRespostaD: {fileID: 478280475}
+  ProxCena: PIZZARIA
+  QuizSimples: 1
+  QuizzPannel: {fileID: 1288396307}
   representaVisual:
   - {fileID: 5675857372675088757, guid: f333a110441c6db419c47d9521c27472, type: 3}
   perguntas:
-  - "QUANTOS PEDA\xC7OS DE PIZZA SER\xC1 O CORRESPONDENTE A 1/2 PIZZA ?"
+  - "QUANTOS PEDA\xC7OS DE PIZZA SER\xC3O EQUIVALENTES \xC0 1/2 PIZZA ?"
   alternativaA:
   - 2
   alternativaB:
@@ -12168,8 +12212,7 @@ MonoBehaviour:
   alternativaD:
   - 4
   respostaCorreta:
-  - 4
-  ProxCena: 
+  - D
 --- !u!1 &1307246478
 GameObject:
   m_ObjectHideFlags: 0
@@ -19896,7 +19939,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2135731330}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1288396311}
+        m_TargetAssemblyTypeName: QuestoesQuiz, Assembly-CSharp
+        m_MethodName: Resposta
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: A
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2135731330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19943,6 +19998,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 345056090}
     m_Modifications:
+    - target: {fileID: 667375347745463065, guid: 2acb5a94eaabbab41bbbdb959f899603,
+        type: 3}
+      propertyPath: ProximaFase
+      value: CIDADE
+      objectReference: {fileID: 0}
     - target: {fileID: 777000368085423746, guid: 2acb5a94eaabbab41bbbdb959f899603,
         type: 3}
       propertyPath: m_Name

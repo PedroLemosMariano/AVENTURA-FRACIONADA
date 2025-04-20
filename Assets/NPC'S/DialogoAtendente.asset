@@ -15,10 +15,10 @@ MonoBehaviour:
   npcName: "Josu\xE9"
   npcPortrait: {fileID: -2023137002, guid: f7a81f1f8b94e8b49abd40248595efd9, type: 3}
   dialogueLines:
-  - "Ol\xE1 jovem! Gostaria de uma pizza ?"
-  - "Por\xE9m... eu preciso de uma ajudinha sua..."
-  - "N\xE3o sei separar os pede\xE7os de maneira certa quando me pedem..."
-  - Consegue me ensinar ?
+  - "Ol\xE1, jovem! Gostaria de uma pizza ?"
+  - "Por\xE9m... Preciso de uma ajudinha sua..."
+  - "N\xE3o sei separar os pede\xE7os de maneira correta quando me pedem..."
+  - Consegueria me ensinar ?
   autoProgressLines: 01010100
   autoProgressDelay: 1.5
   typingSpeed: 0.05

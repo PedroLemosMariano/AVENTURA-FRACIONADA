@@ -124,4 +124,13 @@ public class NPC : MonoBehaviour, IInteractable
         }
        
     }
+
+    public void CloseStore()
+    {
+        QuizzPannel.SetActive(false);
+        dialogueText.SetText("");
+        dialoguePanel.SetActive(false);
+        isDialogueActive = false;
+        PauseController.SetPause(false);
+    }
 }
