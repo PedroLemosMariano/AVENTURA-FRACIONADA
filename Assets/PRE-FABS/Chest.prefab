@@ -147,6 +147,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be352766abb83cb48abf43cab4bb7e4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemPrefab: {fileID: 6074123883676692046, guid: 0e28cfce6c381bc4c916b8bd8295b213,
+  itemPrefab: {fileID: 6074123883676692046, guid: 6a94b0549bfc2aa46b4732ba681f7eb5,
     type: 3}
   openedSprite: {fileID: 349928671, guid: da2d4072f460fd345a7084b053a18380, type: 3}

@@ -25,10 +25,18 @@ public class PlayerItemCollector : MonoBehaviour
             if (item.Name == "MOEDA")
             {
                 item.pego = true;
-                PlayerPrefs.SetFloat("moeda", PlayerPrefs.GetInt("moeda") + 1f);
-                Debug.Log("MOEDA COLETADA");
+
+                int multiplicador = PlayerPrefs.GetInt("moedaX2", 0) == 1 ? 2 : 1;
+
+                float moedasAtuais = PlayerPrefs.GetFloat("moeda", 0f);
+                moedasAtuais += 1f * multiplicador;
+
+                PlayerPrefs.SetFloat("moeda", moedasAtuais);
+
+                Debug.Log("MOEDA COLETADA! Total: " + moedasAtuais);
                 Destroy(collision.gameObject);
             }
+
             else
             {
                 if (item != null)

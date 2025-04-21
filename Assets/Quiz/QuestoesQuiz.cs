@@ -2,13 +2,15 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System.Collections;
 
 public class QuestoesQuiz : MonoBehaviour
 {
+    [Header("------> Configurações do Tema e Quantidade <------")]
     public int idTema;
-
     public int numQuestoes;
-    public bool[] questoesComImagem;
+
+    [Header("------> Referências de UI <------")]
     public Image imagemAuxilio;
     public TextMeshProUGUI textoPergunta;
     public TextMeshProUGUI textoRespostaA;
@@ -19,33 +21,44 @@ public class QuestoesQuiz : MonoBehaviour
     public GameObject botaoRespostaC;
     public TextMeshProUGUI textoRespostaD;
     public GameObject botaoRespostaD;
+    public TextMeshProUGUI textoRespostaAcertos;
 
+    [Header("------> Paineis e Navegação <------")]
     public string ProxCena;
     public bool QuizSimples;
-    public GameObject QuizzPannel;
+    public GameObject painelQuiz;
+    public GameObject painelAcertos;
 
+    [Header("------> Estrelas de Pontuação <------")]
+    public Image estrelaEscura1;
+    public Image estrelaEscura2;
+    public Image estrelaClara1;
+    public Image estrelaClara2;
+
+    [Header("------> Banco de Dados das Questões <------")]
+    public bool[] questoesComImagem;
     public Sprite[] representaVisual;
     public string[] perguntas;
     public string[] alternativaA;
     public string[] alternativaB;
     public string[] alternativaC;
     public string[] alternativaD;
-    public string[] respostaCorreta; // Deve conter "A", "B", "C", "D"
+    public string[] respostaCorreta; // Deve conter "A", "B", "C" ou "D"
 
     private int idPergunta;
     private float acertos;
-    private float questoes;
+    private float totalQuestoes;
 
     void Start()
     {
         idPergunta = 0;
-        questoes = perguntas.Length;
+        totalQuestoes = perguntas.Length;
         AtualizarPergunta();
     }
 
-    public void Resposta(string Alternativa)
+    public void Responder(string alternativa)
     {
-        if (respostaCorreta[idPergunta] == Alternativa)
+        if (respostaCorreta[idPergunta] == alternativa)
         {
             acertos++;
         }
@@ -57,41 +70,70 @@ public class QuestoesQuiz : MonoBehaviour
     void ProximaPergunta()
     {
         idPergunta++;
-        if (idPergunta < questoes)
+        if (idPergunta < totalQuestoes)
         {
             AtualizarPergunta();
         }
         else
         {
-            Debug.Log("Quiz terminado! Acertos: " + acertos + "/" + questoes);
-
-            if (QuizSimples)
-            {
-                QuizzPannel.SetActive(false);
-                PauseController.SetPause(false);
-            }
-            else
-            {
-                PlayerPrefs.SetFloat("Acertos", acertos);
-                PlayerPrefs.SetFloat("TotalQuestoes", questoes);
-                SceneManager.LoadScene(ProxCena);
-            }
+            FinalizarQuiz();
         }
+    }
+
+    void FinalizarQuiz()
+    {
+        Debug.Log("Quiz finalizado!");
+
+        painelQuiz.SetActive(false);
+        painelAcertos.SetActive(true);
+
+        PlayerPrefs.SetFloat("Acertos", acertos);
+        textoRespostaAcertos.text = $"Você acertou {acertos} de {totalQuestoes} perguntas!";
+
+
+        if (QuizSimples)
+        {
+            AtualizarEstrelas();
+            StartCoroutine(FecharAcertos(2f));
+        }
+        else
+        {
+            AtualizarEstrelas();
+            StartCoroutine(CarregarCenaAposDelay(2f));
+        }
+            
+    }
+
+    IEnumerator CarregarCenaAposDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        SceneManager.LoadScene(ProxCena);
+    }
+
+    IEnumerator FecharAcertos(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        painelAcertos.SetActive(false);
+        PauseController.SetPause(false);
+    }
+
+    void AtualizarEstrelas()
+    {
+        float percentual = acertos / totalQuestoes;
+
+        estrelaClara1.gameObject.SetActive(percentual >= 0.5f);
+        estrelaEscura1.gameObject.SetActive(percentual < 0.5f);
+        estrelaClara2.gameObject.SetActive(percentual >= 0.9f);
+        estrelaEscura2.gameObject.SetActive(percentual < 0.9f);
     }
 
     void AtualizarPergunta()
     {
-        if (imagemAuxilio != null && questoesComImagem.Length > idPergunta && questoesComImagem[idPergunta])
+        bool temImagem = imagemAuxilio != null && questoesComImagem.Length > idPergunta && questoesComImagem[idPergunta];
+        if (temImagem && representaVisual.Length > idPergunta && representaVisual[idPergunta] != null)
         {
-            if (representaVisual.Length > idPergunta && representaVisual[idPergunta] != null)
-            {
-                imagemAuxilio.sprite = representaVisual[idPergunta];
-                imagemAuxilio.gameObject.SetActive(true);
-            }
-            else
-            {
-                imagemAuxilio.gameObject.SetActive(false);
-            }
+            imagemAuxilio.sprite = representaVisual[idPergunta];
+            imagemAuxilio.gameObject.SetActive(true);
         }
         else if (imagemAuxilio != null)
         {
@@ -111,26 +153,19 @@ public class QuestoesQuiz : MonoBehaviour
     {
         switch (respostaCorreta[idPergunta])
         {
-            case "A":
-                botaoRespostaA.GetComponent<Image>().color = Color.green;
-                break;
-            case "B":
-                botaoRespostaB.GetComponent<Image>().color = Color.green;
-                break;
-            case "C":
-                botaoRespostaC.GetComponent<Image>().color = Color.green;
-                break;
-            case "D":
-                botaoRespostaD.GetComponent<Image>().color = Color.green;
-                break;
+            case "A": botaoRespostaA.GetComponent<Image>().color = Color.green; break;
+            case "B": botaoRespostaB.GetComponent<Image>().color = Color.green; break;
+            case "C": botaoRespostaC.GetComponent<Image>().color = Color.green; break;
+            case "D": botaoRespostaD.GetComponent<Image>().color = Color.green; break;
         }
     }
 
     void ResetarCoresDosBotoes()
     {
-        botaoRespostaA.GetComponent<Image>().color = Color.white;
-        botaoRespostaB.GetComponent<Image>().color = Color.white;
-        botaoRespostaC.GetComponent<Image>().color = Color.white;
-        botaoRespostaD.GetComponent<Image>().color = Color.white;
+        Color branco = Color.white;
+        botaoRespostaA.GetComponent<Image>().color = branco;
+        botaoRespostaB.GetComponent<Image>().color = branco;
+        botaoRespostaC.GetComponent<Image>().color = branco;
+        botaoRespostaD.GetComponent<Image>().color = branco;
     }
 }

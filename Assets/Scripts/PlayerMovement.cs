@@ -17,6 +17,13 @@ public class PlayerMovement : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
+    public void AtivarAgilidade()
+    {
+        moveSpeed += 2f;
+        Debug.Log("Agilidade ativada ao vivo! Velocidade atual: " + moveSpeed);
+    }
+
+
     void Update()
     {
         if (PauseController.IsGamePaused)

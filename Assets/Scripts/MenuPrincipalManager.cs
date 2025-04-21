@@ -9,7 +9,6 @@ public class MenuPrincipalManager : MonoBehaviour
     [SerializeField] private GameObject painelMenuInicial;
     [SerializeField] private GameObject painelOpcoes;
 
-
     public void Jogar()
     {
         SceneManager.LoadScene(nomeDoLevelDeJogo);
@@ -32,4 +31,5 @@ public class MenuPrincipalManager : MonoBehaviour
         Debug.Log("Saindo do jogo");
         Application.Quit();
     }
+
 }

@@ -10340,8 +10340,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -15}
-  m_SizeDelta: {x: 1663, y: 835}
+  m_AnchoredPosition: {x: 0, y: -20}
+  m_SizeDelta: {x: 534, y: 825}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &961485674
 MonoBehaviour:
@@ -10363,7 +10363,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3c4dee4b7789d6342ad9d96f3ac6db39, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 344eb96265e9db145b6c0bdf626ba047, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -13236,7 +13236,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   idTema: 2
   numQuestoes: 2
-  questoesComImagem: 
   imagemAuxilio: {fileID: 1070346894}
   textoPergunta: {fileID: 83664271}
   textoRespostaA: {fileID: 1192610261}
@@ -13247,9 +13246,16 @@ MonoBehaviour:
   botaoRespostaC: {fileID: 0}
   textoRespostaD: {fileID: 1490087323}
   botaoRespostaD: {fileID: 0}
+  textoRespostaAcertos: {fileID: 0}
   ProxCena: 
   QuizSimples: 0
-  QuizzPannel: {fileID: 0}
+  painelQuiz: {fileID: 0}
+  painelAcertos: {fileID: 0}
+  estrelaEscura1: {fileID: 0}
+  estrelaEscura2: {fileID: 0}
+  estrelaClara1: {fileID: 0}
+  estrelaClara2: {fileID: 0}
+  questoesComImagem: 
   representaVisual:
   - {fileID: 5675857372675088757, guid: f333a110441c6db419c47d9521c27472, type: 3}
   perguntas:
@@ -15694,7 +15700,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1796173072}
         m_TargetAssemblyTypeName: LojaDeCompras, Assembly-CSharp
-        m_MethodName: Compra
+        m_MethodName: CompraMoedasX2
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17387,7 +17393,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1796173072}
         m_TargetAssemblyTypeName: LojaDeCompras, Assembly-CSharp
-        m_MethodName: Compra
+        m_MethodName: CompraAgilidade
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
