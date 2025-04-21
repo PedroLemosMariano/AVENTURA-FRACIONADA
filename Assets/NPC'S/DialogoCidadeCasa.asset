@@ -16,7 +16,7 @@ MonoBehaviour:
   npcPortrait: {fileID: -1134060184, guid: 002b00f1a5bf9e54eb5f9e9777475dbc, type: 3}
   dialogueLines:
   - "Ol\xE1 novamente !"
-  - "Notei que voc\xEA aprendeu como usar os portais..."
+  - "Notei que voc\xEA aprendeu como usar os portais... Meus Parab\xE9ns!"
   - "Quando tiver cansado e quiser conversar, minha casa \xE9 aqui..."
   - Pode vir quando quiser!
   autoProgressLines: 01010100

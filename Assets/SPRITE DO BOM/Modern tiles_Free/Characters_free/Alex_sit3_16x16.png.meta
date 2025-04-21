@@ -67,7 +67,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -81,7 +81,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 18
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,7 +105,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -146,10 +146,10 @@ TextureImporter:
       name: Alex_sit3_16x16_0
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 0
         width: 16
-        height: 23
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,10 +168,10 @@ TextureImporter:
       name: Alex_sit3_16x16_1
       rect:
         serializedVersion: 2
-        x: 17
+        x: 16
         y: 0
         width: 16
-        height: 23
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,7 +190,7 @@ TextureImporter:
       name: Alex_sit3_16x16_2
       rect:
         serializedVersion: 2
-        x: 33
+        x: 32
         y: 0
         width: 16
         height: 24
@@ -212,7 +212,7 @@ TextureImporter:
       name: Alex_sit3_16x16_3
       rect:
         serializedVersion: 2
-        x: 49
+        x: 48
         y: 0
         width: 16
         height: 24
@@ -234,10 +234,10 @@ TextureImporter:
       name: Alex_sit3_16x16_4
       rect:
         serializedVersion: 2
-        x: 65
+        x: 64
         y: 0
         width: 16
-        height: 23
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -256,10 +256,10 @@ TextureImporter:
       name: Alex_sit3_16x16_5
       rect:
         serializedVersion: 2
-        x: 81
+        x: 80
         y: 0
-        width: 30
-        height: 23
+        width: 16
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,10 +278,10 @@ TextureImporter:
       name: Alex_sit3_16x16_6
       rect:
         serializedVersion: 2
-        x: 111
+        x: 96
         y: 0
         width: 16
-        height: 23
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -300,7 +300,7 @@ TextureImporter:
       name: Alex_sit3_16x16_7
       rect:
         serializedVersion: 2
-        x: 127
+        x: 112
         y: 0
         width: 16
         height: 24
@@ -322,7 +322,7 @@ TextureImporter:
       name: Alex_sit3_16x16_8
       rect:
         serializedVersion: 2
-        x: 143
+        x: 128
         y: 0
         width: 16
         height: 24
@@ -344,10 +344,10 @@ TextureImporter:
       name: Alex_sit3_16x16_9
       rect:
         serializedVersion: 2
-        x: 159
+        x: 144
         y: 0
         width: 16
-        height: 23
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -366,10 +366,10 @@ TextureImporter:
       name: Alex_sit3_16x16_10
       rect:
         serializedVersion: 2
-        x: 175
+        x: 160
         y: 0
         width: 16
-        height: 23
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -384,11 +384,33 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Alex_sit3_16x16_11
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 0
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95fc04ae2ba9a3d48bb5ee511ed47333
+      internalID: 569009846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 263b758cd663d8a4699c0122434772fa
     internalID: 0
     vertices: []
     indices: 
@@ -397,7 +419,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Alex_sit3_16x16_0: -4963526119097573087
+      Alex_sit3_16x16_1: 6520453192421005934
+      Alex_sit3_16x16_10: -8461671718634445678
+      Alex_sit3_16x16_11: 569009846
+      Alex_sit3_16x16_2: 7462030943062336078
+      Alex_sit3_16x16_3: 3806037216397219383
+      Alex_sit3_16x16_4: -4426465379321313086
+      Alex_sit3_16x16_5: -8645291259856016587
+      Alex_sit3_16x16_6: -354158222081670763
+      Alex_sit3_16x16_7: -8648396256156247486
+      Alex_sit3_16x16_8: -4157414551177058854
+      Alex_sit3_16x16_9: -4637389839924904145
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -15,7 +15,7 @@ MonoBehaviour:
   npcName: Deyvid
   npcPortrait: {fileID: -1134060184, guid: 002b00f1a5bf9e54eb5f9e9777475dbc, type: 3}
   dialogueLines:
-  - "Nossa! Que susrpresa agrad\xE1vel!"
+  - "Nossa! Que surpresa agrad\xE1vel!"
   - "J\xE1 que est\xE1 aqui, vou compartilhar com voc\xEA minha nova descoberta..."
   - "Podemos realizar opera\xE7\xF5es com as fra\xE7\xF5es! Voc\xEA sabia?"
   - Mas dependendo precisamos mexer com o divisor delas...

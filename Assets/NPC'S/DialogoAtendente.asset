@@ -17,7 +17,7 @@ MonoBehaviour:
   dialogueLines:
   - "Ol\xE1, jovem! Gostaria de uma pizza ?"
   - "Por\xE9m... Preciso de uma ajudinha sua..."
-  - "N\xE3o sei separar os pede\xE7os de maneira correta quando me pedem..."
+  - "N\xE3o sei separar os peda\xE7os de maneira correta quando me pedem..."
   - Consegueria me ensinar ?
   autoProgressLines: 01010100
   autoProgressDelay: 1.5

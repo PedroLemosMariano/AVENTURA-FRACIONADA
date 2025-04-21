@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/PIZZARIA.unity
     guid: f96b597967e0ea44e8fb7ae85e68dafb
   - enabled: 1
+    path: Assets/Scenes/PADARIA.unity
+    guid: 4a53e312b8e5de246bee57b281d80259
+  - enabled: 1
     path: Assets/Scenes/LOJA-COMPRAS.unity
     guid: 5079d5b9b85bb1143bd1a100c1f5573d
   - enabled: 1
@@ -29,16 +32,16 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/VILA.unity
     guid: 7d5d3cbf8d423684bbbd9cc50bbdbb45
-  - enabled: 1
+  - enabled: 0
     path: "Assets/Scenes/VILA-MATEM\xC1TICA.unity"
     guid: ff691c9110133c0438fc958d1cb6d89f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/FINAL-CASTELO.unity
     guid: 93f76d76068c8134a953d563cb30b76a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/CASTELO.unity
     guid: d732dda4017eb0e4081dc5afd5ec724d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/QuizFINAL.unity
     guid: 1509bce4c370ae24d84632bfc4fbafb1
   m_configObjects: {}

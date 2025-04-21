@@ -16,7 +16,7 @@ MonoBehaviour:
   npcPortrait: {fileID: -136094314, guid: 5bf455ca9a755d640b2467b346d6125a, type: 3}
   dialogueLines:
   - "Ol\xE1 meu jovem ! Voc\xEA j\xE1 chogou at\xE9 aqui ?"
-  - Quando fiz a peimira vez, eu demorei mais tempo...
+  - Quando fiz a primeira vez, eu demorei mais tempo...
   autoProgressLines: 0100
   autoProgressDelay: 1.5
   typingSpeed: 0.05

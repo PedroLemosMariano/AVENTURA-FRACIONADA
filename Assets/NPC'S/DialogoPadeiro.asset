@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bee1247029a32940974e2cdbe0f7f7a, type: 3}
+  m_Name: DialogoPadeiro
+  m_EditorClassIdentifier: 
+  npcName: Elisa
+  npcPortrait: {fileID: -686686716, guid: 3eac836cd318fa34ea054d231c345f02, type: 3}
+  dialogueLines:
+  - "Ol\xE1, amigo! Tudo bem ?"
+  - "Fizemos 40 p\xE3es hoje, mas ja vendemos 28 !"
+  - "Quantos p\xE3es voc\xEA gostaria de levar?"
+  autoProgressLines: 010100
+  autoProgressDelay: 1.5
+  typingSpeed: 0.05
+  voiceSound: {fileID: 8300000, guid: 667cfd2cd31394041af51810eb0660d1, type: 3}
+  voicePitch: 1
