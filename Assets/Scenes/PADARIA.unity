@@ -5156,7 +5156,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: PIZZARIA
+  m_text: PADARIA
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ec59cf3f6e10ec24cb2a94f2bd6ad979, type: 2}
   m_sharedMaterial: {fileID: -5800589495621094560, guid: ec59cf3f6e10ec24cb2a94f2bd6ad979,
@@ -12459,7 +12459,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -74256487055032444, guid: b2c4f401262c0294999e2de9d0ebe3f9, type: 3}
+  m_Sprite: {fileID: 4593992201896182468, guid: 01c8cb142e0d89f489babfc6aa27ba88,
+    type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

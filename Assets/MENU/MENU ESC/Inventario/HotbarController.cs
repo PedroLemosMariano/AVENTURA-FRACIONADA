@@ -12,6 +12,8 @@ public class HotbarController : MonoBehaviour
     private ItemDictionary itemDictionary;
     private Key[] hotbarKeys;
 
+    [SerializeField] private bool carregarUltimaPosicao;
+
     private void Awake()
     {
         itemDictionary = FindFirstObjectByType<ItemDictionary>();
@@ -20,6 +22,11 @@ public class HotbarController : MonoBehaviour
         for (int i = 0; i < slotCount; i++)
         {
             hotbarKeys[i] = i < 9 ? (Key)((int)Key.Digit1 + i) : Key.Digit0;
+        }
+
+        if (carregarUltimaPosicao)
+        {
+            FindAnyObjectByType<PlayerMovement>().transform.position = new Vector2(PlayerPrefs.GetFloat("X"), PlayerPrefs.GetFloat("Y"));
         }
     }
 

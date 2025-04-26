@@ -216,6 +216,7 @@ MonoBehaviour:
   slotPrefab: {fileID: 3820379247711829890, guid: 5b9df216e5bee2842914db8fc5919c40,
     type: 3}
   slotCount: 10
+  carregarUltimaPosicao: 0
 --- !u!114 &7634782
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7050,7 +7051,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.04, y: -9.55, z: -20}
+  m_LocalPosition: {x: -4.12, y: -9.33, z: -20}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8903,7 +8904,7 @@ Transform:
   m_GameObject: {fileID: 754962505}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.04, y: -9.55, z: 0}
+  m_LocalPosition: {x: -4.12, y: -9.33, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10712,7 +10713,7 @@ Transform:
   m_GameObject: {fileID: 1023816720}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.86, y: 2.39, z: 0.43938428}
+  m_LocalPosition: {x: -3.12, y: 2.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -15365,7 +15366,7 @@ Transform:
   m_GameObject: {fileID: 1645556769}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.04, y: -9.55, z: -20}
+  m_LocalPosition: {x: -4.12, y: -9.33, z: -20}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

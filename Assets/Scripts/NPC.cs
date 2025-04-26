@@ -109,6 +109,15 @@ public class NPC : MonoBehaviour, IInteractable
     {
         if (comecaQuiz)
         {
+            QuestoesQuiz quiz = FindFirstObjectByType<QuestoesQuiz>();
+            if (quiz != null)
+            {
+                quiz.ResetaQuiz();
+            }
+            else
+            {
+                Debug.Log("Quiz não encontrado na cena!");
+            }
             QuizzPannel.SetActive(true);
             dialogueText.SetText("");
             dialoguePanel.SetActive(false);

@@ -216,6 +216,7 @@ MonoBehaviour:
   slotPrefab: {fileID: 3820379247711829890, guid: 5b9df216e5bee2842914db8fc5919c40,
     type: 3}
   slotCount: 10
+  carregarUltimaPosicao: 0
 --- !u!114 &7634782
 MonoBehaviour:
   m_ObjectHideFlags: 0

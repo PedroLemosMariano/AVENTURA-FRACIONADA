@@ -2,7 +2,6 @@ using UnityEngine;
 using TMPro;
 using System.Collections;
 using static ResetarUpdates;
-using static PowerupsAtivos;
 
 public class LojaDeCompras : MonoBehaviour
 {
@@ -19,7 +18,6 @@ public class LojaDeCompras : MonoBehaviour
             PlayerPrefs.SetFloat("moeda", moedas);
 
             PlayerPrefs.SetInt("moedaX2", 1);
-            PowerUpsAtivos.moedaX2 = true;
 
             Debug.Log("Compra realizada: Moedas x2 ativado! Restaram: " + moedas);
         }
@@ -39,7 +37,7 @@ public class LojaDeCompras : MonoBehaviour
             moedas -= preco;
             PlayerPrefs.SetFloat("moeda", moedas);
 
-            PowerUpsAtivos.agilidade = true;
+            PlayerPrefs.SetInt("agilidade", 1);
 
             FindFirstObjectByType<PlayerMovement>().AtivarAgilidade(); // ativa no momento
 

@@ -61,6 +61,8 @@ public class QuestoesQuiz : MonoBehaviour
         if (respostaCorreta[idPergunta] == alternativa)
         {
             acertos++;
+            PlayerPrefs.SetFloat("moeda", PlayerPrefs.GetFloat("moeda") + 5f);
+
         }
 
         DestacarBotaoCorreto();
@@ -167,5 +169,18 @@ public class QuestoesQuiz : MonoBehaviour
         botaoRespostaB.GetComponent<Image>().color = branco;
         botaoRespostaC.GetComponent<Image>().color = branco;
         botaoRespostaD.GetComponent<Image>().color = branco;
+    }
+
+    public void ResetaQuiz()
+    {
+        idPergunta = 0;
+        acertos = 0;
+        ResetarCoresDosBotoes();
+        totalQuestoes = perguntas.Length;
+        if (painelQuiz != null)
+            painelQuiz.SetActive(true);
+        if (painelAcertos != null)
+            painelAcertos.SetActive(false);
+        AtualizarPergunta();
     }
 }
