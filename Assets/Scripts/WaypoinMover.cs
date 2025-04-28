@@ -47,6 +47,7 @@ public class WaypoinMover : MonoBehaviour
     {
         Transform target = waypoints[currentWaypointIndex];
         Vector2 direction = (target.position - transform.position).normalized;
+        GetComponent<SpriteRenderer>().flipX = direction.x < 0f;
 
         if (direction.magnitude > 0f)
         {

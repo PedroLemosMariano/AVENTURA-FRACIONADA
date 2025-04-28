@@ -1,0 +1,354 @@
+fileFormatVersion: 2
+guid: dff8db6ae9931e14d8da56d2eaa31780
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3265585028804474372
+    second: "Tropa da Gard\xEAnia (1)_0"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "Tropa da Gard\xEAnia (1)_11"
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 638
+        width: 214
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f578b3f7c5c5cb549a17be963b328798
+      internalID: -1262200495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Tropa da Gard\xEAnia (1)_37"
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 38
+        width: 212
+        height: 206
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42bce67f4f3302049982eff9a46f6e33
+      internalID: 1456925743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Tropa da Gard\xEAnia (1)_38"
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 37
+        width: 214
+        height: 207
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1e94829a416a3f45893f3edc181fb5a
+      internalID: -1873124968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Tropa da Gard\xEAnia (1)_39"
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 40
+        width: 214
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68d8bcdfdc5d4b749b36181f91e2d949
+      internalID: -601642337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Tropa da Gard\xEAnia (1)_0"
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 538
+        width: 214
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fd3d94a95825e14f930e56639ae12cb
+      internalID: 3265585028804474372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Tropa da Gard\xEAnia (1)_1"
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 332
+        width: 212
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11f1d426db56912458f56e62a5c72174
+      internalID: -1119524505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Tropa da Gard\xEAnia (1)_2"
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 333
+        width: 208
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f854a613eaa9c84eb4455f3d0790235
+      internalID: 1798330502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Tropa da Gard\xEAnia (1)_3"
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 334
+        width: 208
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a42aad8d25f04c54db7c7ec5e6a1e846
+      internalID: 1295257320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 978c87a3663f5644ca82e0381a48cfe7
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "Tropa da Gard\xEAnia (1)_0": 3265585028804474372
+      "Tropa da Gard\xEAnia (1)_1": -1119524505
+      "Tropa da Gard\xEAnia (1)_10": 232048490
+      "Tropa da Gard\xEAnia (1)_11": -1262200495
+      "Tropa da Gard\xEAnia (1)_12": -1825886063
+      "Tropa da Gard\xEAnia (1)_13": -738181173
+      "Tropa da Gard\xEAnia (1)_14": 392752166
+      "Tropa da Gard\xEAnia (1)_15": -1621386362
+      "Tropa da Gard\xEAnia (1)_16": 1198653472
+      "Tropa da Gard\xEAnia (1)_17": 1936614832
+      "Tropa da Gard\xEAnia (1)_18": 1096282014
+      "Tropa da Gard\xEAnia (1)_19": -956038873
+      "Tropa da Gard\xEAnia (1)_2": 1798330502
+      "Tropa da Gard\xEAnia (1)_20": -1011169535
+      "Tropa da Gard\xEAnia (1)_21": 1850096109
+      "Tropa da Gard\xEAnia (1)_22": 2010218367
+      "Tropa da Gard\xEAnia (1)_23": 2018878365
+      "Tropa da Gard\xEAnia (1)_24": 252883213
+      "Tropa da Gard\xEAnia (1)_25": 175286866
+      "Tropa da Gard\xEAnia (1)_26": -2086018330
+      "Tropa da Gard\xEAnia (1)_27": -695672159
+      "Tropa da Gard\xEAnia (1)_28": -2102060552
+      "Tropa da Gard\xEAnia (1)_29": 1133625613
+      "Tropa da Gard\xEAnia (1)_3": 1295257320
+      "Tropa da Gard\xEAnia (1)_30": 1894887262
+      "Tropa da Gard\xEAnia (1)_31": -1008997213
+      "Tropa da Gard\xEAnia (1)_32": -622453987
+      "Tropa da Gard\xEAnia (1)_33": -1788255634
+      "Tropa da Gard\xEAnia (1)_34": -727610893
+      "Tropa da Gard\xEAnia (1)_35": 160170403
+      "Tropa da Gard\xEAnia (1)_36": -705518259
+      "Tropa da Gard\xEAnia (1)_37": 1456925743
+      "Tropa da Gard\xEAnia (1)_38": -1873124968
+      "Tropa da Gard\xEAnia (1)_39": -601642337
+      "Tropa da Gard\xEAnia (1)_4": 458167330
+      "Tropa da Gard\xEAnia (1)_40": 204975107
+      "Tropa da Gard\xEAnia (1)_41": 1127509638
+      "Tropa da Gard\xEAnia (1)_42": -953424966
+      "Tropa da Gard\xEAnia (1)_43": -275430028
+      "Tropa da Gard\xEAnia (1)_44": -50831786
+      "Tropa da Gard\xEAnia (1)_5": 663535818
+      "Tropa da Gard\xEAnia (1)_6": 298566495
+      "Tropa da Gard\xEAnia (1)_7": 339256011
+      "Tropa da Gard\xEAnia (1)_8": -1326597721
+      "Tropa da Gard\xEAnia (1)_9": -1245824387
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
