@@ -3,12 +3,17 @@ using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.EventSystems;
 
 public class QuestoesQuiz : MonoBehaviour
 {
     [Header("------> Configurações do Tema e Quantidade <------")]
     public int idTema;
     public int numQuestoes;
+    public bool TimerFinal;
+    public bool QuizzFinal;
+    [SerializeField] private float tempoAtual;
+    public EventSystem eventSystem;
 
     [Header("------> Referências de UI <------")]
     public Image imagemAuxilio;
@@ -22,12 +27,14 @@ public class QuestoesQuiz : MonoBehaviour
     public TextMeshProUGUI textoRespostaD;
     public GameObject botaoRespostaD;
     public TextMeshProUGUI textoRespostaAcertos;
+    public TextMeshProUGUI textoTempoRestante;
 
     [Header("------> Paineis e Navegação <------")]
     public string ProxCena;
     public bool QuizSimples;
     public GameObject painelQuiz;
     public GameObject painelAcertos;
+    public GameObject painelNaoRespondeu;
 
     [Header("------> Estrelas de Pontuação <------")]
     public Image estrelaEscura1;
@@ -56,6 +63,33 @@ public class QuestoesQuiz : MonoBehaviour
         AtualizarPergunta();
     }
 
+    private void Update()
+    {
+        if (QuizSimples)
+        {
+            return;
+        }
+
+        if (!QuizzFinal)
+        {
+            return;
+        }
+
+        if (TimerFinal)
+        {
+            if (tempoAtual > 0)
+            {
+                tempoAtual -= Time.deltaTime;
+                textoTempoRestante.text = "Tempo: " + Mathf.Round(tempoAtual).ToString();
+            }
+            else
+            {
+                StartCoroutine(TimerPergunta(2f));
+                TimerFinal = false;
+            }
+        }
+    }
+
     public void Responder(string alternativa)
     {
         if (respostaCorreta[idPergunta] == alternativa)
@@ -75,11 +109,14 @@ public class QuestoesQuiz : MonoBehaviour
         if (idPergunta < totalQuestoes)
         {
             AtualizarPergunta();
+            TimerFinal = true;
+            tempoAtual = 20f;
         }
         else
         {
             FinalizarQuiz();
         }
+
     }
 
     void FinalizarQuiz()
@@ -117,6 +154,18 @@ public class QuestoesQuiz : MonoBehaviour
         yield return new WaitForSeconds(delay);
         painelAcertos.SetActive(false);
         PauseController.SetPause(false);
+    }
+
+    IEnumerator TimerPergunta(float delay)
+    {
+        eventSystem.gameObject.SetActive(false);
+        painelNaoRespondeu.SetActive(true);
+        yield return new WaitForSeconds(delay);
+        DestacarBotaoCorreto();
+        yield return new WaitForSeconds(delay);
+        painelNaoRespondeu.SetActive(false);
+        eventSystem.gameObject.SetActive(true);
+        ProximaPergunta();
     }
 
     void AtualizarEstrelas()

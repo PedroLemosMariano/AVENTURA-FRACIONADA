@@ -6826,9 +6826,8 @@ GameObject:
   - component: {fileID: 433662527}
   - component: {fileID: 433662526}
   - component: {fileID: 433662525}
-  - component: {fileID: 433662524}
-  - component: {fileID: 433662523}
-  - component: {fileID: 433662522}
+  - component: {fileID: 433662529}
+  - component: {fileID: 433662528}
   m_Layer: 0
   m_Name: CARRINHO DE COMPRA
   m_TagString: Untagged
@@ -6851,59 +6850,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 345056090}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &433662522
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 433662520}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 15cad7899a0ab1c46bafd6077559bef7, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!114 &433662523
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 433662520}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed8b1ae4e4e52b34ea557c1c11e076fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_CategoryHash: 0
-  m_labelHash: 0
-  m_SpriteKey: 0
-  m_SpriteHash: 0
---- !u!114 &433662524
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 433662520}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c29cff538c195c249b69c6f2236de67b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Library: []
-  m_SpriteLibraryAsset: {fileID: 7108339969198208228, guid: e110b041117b5e047838ca1a843b2378,
-    type: 3}
 --- !u!61 &433662525
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7032,6 +6978,82 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &433662528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433662520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f4baf5f0c5090847a01f677b80013f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  direcao:
+  - {fileID: 1841705274, guid: 5205671d9186fcd47bd45bb93387dcb2, type: 3}
+  - {fileID: 1053104598, guid: 5205671d9186fcd47bd45bb93387dcb2, type: 3}
+  - {fileID: -1801219770, guid: 5205671d9186fcd47bd45bb93387dcb2, type: 3}
+  - {fileID: 348495133, guid: 5205671d9186fcd47bd45bb93387dcb2, type: 3}
+--- !u!60 &433662529
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433662520}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.3125, y: 1.625}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.65625, y: 0.75}
+      - {x: 0.5729167, y: 0.8125}
+      - {x: -0.115171, y: 0.8252301}
+      - {x: -0.1967662, y: 0.5324129}
+      - {x: -0.4016231, y: 0.51157975}
+      - {x: -0.65625, y: 0.3125}
+      - {x: -0.65625, y: -0.7708334}
+      - {x: -0.59375, y: -0.8125}
+      - {x: 0.34375, y: -0.8125}
+      - {x: 0.46875, y: -0.7083334}
+      - {x: 0.4479167, y: -0.4375}
+      - {x: 0.65625, y: -0.22916667}
+  m_UseDelaunayMesh: 0
 --- !u!1 &448781580
 GameObject:
   m_ObjectHideFlags: 0

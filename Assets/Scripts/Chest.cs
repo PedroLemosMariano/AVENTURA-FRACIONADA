@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Chest : MonoBehaviour, IInteractable
@@ -6,10 +7,17 @@ public class Chest : MonoBehaviour, IInteractable
     public string ChestID { get; private set; }
     public GameObject itemPrefab;
     public Sprite openedSprite;
+    public int index;
 
-    void Start()
+    private void Start()
     {
         ChestID ??= GlobalHelper.GenerateUniqueID(gameObject);
+
+        // Verifica se já foi aberto
+        if (PlayerPrefs.GetInt("Chest_" + index, 0) == 1)
+        {
+            SetOpened(true);
+        }
     }
 
     public bool CanInteract()
@@ -33,6 +41,10 @@ public class Chest : MonoBehaviour, IInteractable
             GameObject droppedItem = Instantiate(itemPrefab, transform.position + Vector3.down, Quaternion.identity);
             droppedItem.GetComponent<BounceEffect>().StartBounce();
         }
+
+        // Salva o estado como "aberto"
+        PlayerPrefs.SetInt("Chest_" + index, 1);
+        PlayerPrefs.Save();
     }
 
     public void SetOpened(bool opened)
@@ -41,6 +53,5 @@ public class Chest : MonoBehaviour, IInteractable
         {
             GetComponent<SpriteRenderer>().sprite = openedSprite;
         }
- 
     }
 }

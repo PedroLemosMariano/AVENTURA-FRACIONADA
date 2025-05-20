@@ -3044,6 +3044,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   idTema: 1
   numQuestoes: 1
+  TimerFinal: 0
+  QuizzFinal: 0
+  tempoAtual: 0
+  eventSystem: {fileID: 213395099}
   imagemAuxilio: {fileID: 1244639244}
   textoPergunta: {fileID: 976432582}
   textoRespostaA: {fileID: 1350560632}
@@ -3055,10 +3059,12 @@ MonoBehaviour:
   textoRespostaD: {fileID: 505816816}
   botaoRespostaD: {fileID: 696432358}
   textoRespostaAcertos: {fileID: 256245068}
+  textoTempoRestante: {fileID: 0}
   ProxCena: CIDADE
   QuizSimples: 0
   painelQuiz: {fileID: 203436465}
   painelAcertos: {fileID: 185799019}
+  painelNaoRespondeu: {fileID: 0}
   estrelaEscura1: {fileID: 1825283544}
   estrelaEscura2: {fileID: 1507507073}
   estrelaClara1: {fileID: 771011819}
