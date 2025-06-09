@@ -13,6 +13,8 @@ public class HotbarController : MonoBehaviour
     private Key[] hotbarKeys;
 
     [SerializeField] private bool carregarUltimaPosicao;
+    [SerializeField] private bool masNaoNesseCaso;
+  
 
     private void Awake()
     {
@@ -24,9 +26,10 @@ public class HotbarController : MonoBehaviour
             hotbarKeys[i] = i < 9 ? (Key)((int)Key.Digit1 + i) : Key.Digit0;
         }
 
-        if (carregarUltimaPosicao)
+        if (carregarUltimaPosicao && !masNaoNesseCaso)
         {
             FindAnyObjectByType<PlayerMovement>().transform.position = new Vector2(PlayerPrefs.GetFloat("X"), PlayerPrefs.GetFloat("Y"));
+
         }
     }
 

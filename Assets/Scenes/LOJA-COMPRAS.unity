@@ -217,6 +217,7 @@ MonoBehaviour:
     type: 3}
   slotCount: 10
   carregarUltimaPosicao: 0
+  masNaoNesseCaso: 0
 --- !u!114 &7634782
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9291,7 +9292,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 807639375}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -13425,6 +13426,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   idTema: 2
   numQuestoes: 2
+  TimerFinal: 0
+  QuizzFinal: 0
+  tempoAtual: 0
+  eventSystem: {fileID: 0}
   imagemAuxilio: {fileID: 1070346894}
   textoPergunta: {fileID: 83664271}
   textoRespostaA: {fileID: 1192610261}
@@ -13436,10 +13441,12 @@ MonoBehaviour:
   textoRespostaD: {fileID: 1490087323}
   botaoRespostaD: {fileID: 0}
   textoRespostaAcertos: {fileID: 0}
+  textoTempoRestante: {fileID: 0}
   ProxCena: 
   QuizSimples: 0
   painelQuiz: {fileID: 0}
   painelAcertos: {fileID: 0}
+  painelNaoRespondeu: {fileID: 0}
   estrelaEscura1: {fileID: 0}
   estrelaEscura2: {fileID: 0}
   estrelaClara1: {fileID: 0}
