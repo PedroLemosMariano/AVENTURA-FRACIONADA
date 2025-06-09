@@ -41,18 +41,14 @@ Estudantes do ensino fundamental I, professores de matemática e responsáveis q
 - [x] Definição da proposta pedagógica
 - [x] Roteiro e design dos personagens
 - [x] Protótipo inicial das fases
-- [ ] Implementação dos desafios com frações
-- [ ] Fase de testes com usuários
-- [ ] Lançamento da versão beta
+- [x] Implementação dos desafios com frações
+- [x] Fase de testes com usuários
+- [x] Lançamento da versão beta
 
 ## 🤝 Contribuições
 
-Contribuições são bem-vindas! Entre em contato pelo nosso [e-mail de contato ou GitHub (em breve)] se quiser ajudar no desenvolvimento, testar o jogo ou sugerir melhorias.
-
-## 📄 Licença
-
-Este projeto será distribuído sob a Licença MIT. Consulte o arquivo `LICENSE` para mais informações.
+Contribuições são bem-vindas! Entre em contato pelo nosso [e-mail de contato ou GitHub] se quiser ajudar no desenvolvimento, testar o jogo ou sugerir melhorias.
 
 ---
 
-**Desenvolvido como parte do Trabalho de Conclusão de Curso em Ciência da Computação – UFV - Campus Rio Paranaíba.**
+**Desenvolvido como parte do Trabalho de Conclusão de Curso em Sistemas de Informação – UFV - Campus Rio Paranaíba.**
