@@ -3757,6 +3757,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   idTema: 0
   numQuestoes: 1
+  TimerFinal: 0
+  QuizzFinal: 0
+  tempoAtual: 0
+  eventSystem: {fileID: 0}
   imagemAuxilio: {fileID: 1070346894}
   textoPergunta: {fileID: 83664271}
   textoRespostaA: {fileID: 1192610261}
@@ -3768,10 +3772,12 @@ MonoBehaviour:
   textoRespostaD: {fileID: 1490087323}
   botaoRespostaD: {fileID: 478280475}
   textoRespostaAcertos: {fileID: 1612164621}
+  textoTempoRestante: {fileID: 0}
   ProxCena: PIZZARIA
   QuizSimples: 1
   painelQuiz: {fileID: 1288396307}
   painelAcertos: {fileID: 1882875192}
+  painelNaoRespondeu: {fileID: 0}
   estrelaEscura1: {fileID: 351957963}
   estrelaEscura2: {fileID: 1658776002}
   estrelaClara1: {fileID: 567582498}
