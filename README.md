@@ -17,8 +17,8 @@ Neste jogo 2D, os jogadores exploram cenários temáticos resolvendo desafios ma
 
 ## 🚧 Status do Projeto
 
-> 🚀 **Em desenvolvimento**  
-Estamos na fase de prototipação e implementação das funcionalidades principais. A interface gráfica está sendo construída no Unity, com foco em jogabilidade simples e intuitiva.
+> 🚀 **Finalizado**  
+A interface gráfica foi construída no Unity, com foco em jogabilidade simples e intuitiva.
 
 ## 🛠️ Tecnologias utilizadas
 
