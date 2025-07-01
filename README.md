@@ -1,3 +1,5 @@
+Pôster Aventura Fracionada.png
+
 # 🧩 Aventura Fracionada
 
 **Aventura Fracionada** é um jogo educativo em desenvolvimento que tem como objetivo auxiliar alunos do ensino fundamental no aprendizado de frações e suas operações básicas (adição, subtração, multiplicação e divisão), por meio de uma experiência interativa, divertida e lúdica.
