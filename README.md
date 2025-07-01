@@ -1,4 +1,4 @@
-Pôster Aventura Fracionada.png
+![Pôster do Jogo Aventura Fracionada](Pôster%20Aventura%20Fracionada.png)
 
 # 🧩 Aventura Fracionada
 
