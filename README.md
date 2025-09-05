@@ -15,8 +15,8 @@ Neste jogo 2D, os jogadores exploram cenários temáticos resolvendo desafios ma
 
 ## 🚧 Status do Projeto
 
-> 🚀 **CONCLUÍDO**  
-O jogo está pronto pra uso, qualquer dúvida ou sugestão, entre em contato.
+> 🚀 **CONCLUÍDO**
+> O jogo está hospedado no site da [Universidade Federal de Viçosa]([https://unity.com/](https://eventos.crp.ufv.br/jogosdigitais/?page_id=1829)) 
 
 ## 🛠️ Tecnologias utilizadas
 
@@ -34,7 +34,7 @@ O projeto será organizado em:
 
 ## 👨‍🏫 Público-alvo
 
-Estudantes do ensino fundamental I, professores de matemática e responsáveis que buscam ferramentas de apoio ao ensino de frações.
+Estudantes do ensino fundamental II, professores de matemática e responsáveis que buscam ferramentas de apoio ao ensino de frações.
 
 ## 📅 Planejamento
 
