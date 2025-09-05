@@ -16,7 +16,7 @@ Neste jogo 2D, os jogadores exploram cenários temáticos resolvendo desafios ma
 ## 🚧 Status do Projeto
 
 > 🚀 **CONCLUÍDO**
-> O jogo está hospedado no site da [Universidade Federal de Viçosa]([https://unity.com/](https://eventos.crp.ufv.br/jogosdigitais/?page_id=1829)) 
+O jogo está hospedado no site da [Universidade Federal de Viçosa]([https://unity.com/](https://eventos.crp.ufv.br/jogosdigitais/?page_id=1829)) 
 
 ## 🛠️ Tecnologias utilizadas
 
