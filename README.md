@@ -68,7 +68,7 @@ Aventura-Fracionada/
 - [x] Protótipo inicial das fases  
 - [x] Implementação dos desafios com frações  
 - [x] Fase de testes com usuários  
-- [ ] Lançamento da versão final  
+- [x] Lançamento da versão final  
 
 ---
 
