@@ -5,11 +5,6 @@
 
 # 🧩 Aventura Fracionada
 
-![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)  
-![Plataforma](https://img.shields.io/badge/plataforma-PC-blue)  
-![Unity](https://img.shields.io/badge/engine-Unity-black?logo=unity)  
-![Licença](https://img.shields.io/badge/licença-MIT-green)
-
 **Aventura Fracionada** é um jogo educativo em desenvolvimento que tem como objetivo auxiliar alunos do ensino fundamental no aprendizado de frações e suas operações básicas (adição, subtração, multiplicação e divisão), por meio de uma experiência interativa, divertida e lúdica.  
 
 ---
@@ -30,7 +25,7 @@ A proposta é transformar o estudo de frações em uma aventura, reforçando o c
 
 ## 🚧 Status do Projeto  
 
-> 🚀 **Em desenvolvimento**  
+> 🚀 **CONCLUÍDO**  
 
 ---
 
