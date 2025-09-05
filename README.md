@@ -46,10 +46,10 @@ O jogo estará disponível no site da [Universidade Federal de Viçosa](https://
 ## 📁 Estrutura do Projeto (em breve)  
 
 Aventura-Fracionada/
-│── Assets/ → arquivos gráficos e sons
-│── Scripts/ → lógica do jogo em C#
-│── Scenes/ → fases e menus do jogo
-│── Docs/ → documentação e materiais pedagógicos
+── Assets/ → arquivos gráficos e sons
+── Scripts/ → lógica do jogo em C#
+── Scenes/ → fases e menus do jogo
+── Docs/ → documentação e materiais pedagógicos
 
 ---
 
