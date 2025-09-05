@@ -20,7 +20,12 @@ MonoBehaviour:
   - "Em algumas delas, voc\xEA precisa completar desafios !"
   - "Ahhh! Guarde as moedas com sabedoria... Afinal, nunca sabemos quando ser\xE3o
     necess\xE1rias, n\xE3o \xE9 mesmo ?"
-  autoProgressLines: 01010100
+  - ...
+  - "Vou te dar uma dica! Ouvi dizer que os peda\xE7os do mapa faltante, sempre estar\xE3o
+    dentro de algum ba\xFA pelo mapa! "
+  - "Lembre-se, pra usa-los \xE9 so apertar o bot\xE3o de intera\xE7\xE3o com os
+    itens!"
+  autoProgressLines: 01010101010100
   autoProgressDelay: 1.5
   typingSpeed: 0.05
   voiceSound: {fileID: 8300000, guid: 14abfab17b6b14b4691add23b8e51a83, type: 3}

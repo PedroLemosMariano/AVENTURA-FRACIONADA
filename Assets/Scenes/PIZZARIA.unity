@@ -3802,7 +3802,8 @@ MonoBehaviour:
   representaVisual:
   - {fileID: 5675857372675088757, guid: f333a110441c6db419c47d9521c27472, type: 3}
   perguntas:
-  - "QUANTOS PEDA\xC7OS DE PIZZA SER\xC3O EQUIVALENTES \xC0 1/2 PIZZA ?"
+  - "NESSA IMAGEM, QUANTOS PEDA\xC7OS DE PIZZA SER\xC3O EQUIVALENTES \xC0 1/2 PIZZA
+    ?"
   alternativaA:
   - 2
   alternativaB:
@@ -9125,7 +9126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1afdd46be228c5247ae2042ff95d571e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 3
   footstepSpeed: 0.5
 --- !u!61 &754962510
 BoxCollider2D:

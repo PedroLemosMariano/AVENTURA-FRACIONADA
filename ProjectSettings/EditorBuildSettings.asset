@@ -41,5 +41,17 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/QuizFINAL.unity
     guid: 1509bce4c370ae24d84632bfc4fbafb1
+  - enabled: 1
+    path: "Assets/Scenes/QUIZ-ADI\xC7\xC3O.unity"
+    guid: 28d463e3b3c671349afcf32e4f037177
+  - enabled: 1
+    path: "Assets/Scenes/QUIZ-DIVIS\xC3O.unity"
+    guid: 3ac663873eea9964a80ca36b0d5c1441
+  - enabled: 1
+    path: "Assets/Scenes/QUIZ-MULTIPLICA\xC7\xC3O.unity"
+    guid: 2bbebbbacd6f75a46a18af8858764d8b
+  - enabled: 1
+    path: "Assets/Scenes/QUIZ-SUBTRA\xC7\xC3O.unity"
+    guid: d43fbed9f091a2b409c020890f4f7ca1
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

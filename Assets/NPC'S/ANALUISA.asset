@@ -16,8 +16,23 @@ MonoBehaviour:
   npcPortrait: {fileID: 8066545270908933541, guid: 4b23c57c478ac4d4c9a4d8ea4d54e580,
     type: 3}
   dialogueLines:
-  - Oiii !
-  autoProgressLines: 01
+  - "Ol\xE1, jovem aventureiro! Pronto para aprender a somar fra\xE7\xF5es?"
+  - "Imagine que voc\xEA tem 1/4 de uma pizza... e depois ganha mais 2/4. Quantos
+    peda\xE7os voc\xEA tem agora?"
+  - "Quando os denominadores s\xE3o iguais, \xE9 f\xE1cil! Voc\xEA s\xF3 precisa
+    somar os numeradores."
+  - "1/4 + 2/4 = (1 + 2)/4 = 3/4. Viu como \xE9 simples?"
+  - Mas e se os denominadores forem diferentes? Como somar 1/3 + 1/6?
+  - "A\xED precisamos encontrar um DENOMINADOR COMUM, que \xE9 um n\xFAmero que os
+    dois denominadores compartilham."
+  - "No caso de 1/3 e 1/6, o menor m\xFAltiplo comum entre 3 e 6 \xE9 6!"
+  - "Transformamos 1/3 em 2/6 (multiplicando por 2 em cima e embaixo) e deixamos
+    o 1/6 como est\xE1.  "
+  - 'Agora temos: 2/6 + 1/6 = 3/6. E simplificando, isso vira 1/2!  '
+  - "Fant\xE1stico, n\xE3o \xE9?"
+  - "Agora que voc\xEA aprendeu, que tal um desafio? V\xE1 para o castelo e teste
+    seu conhecimento!"
+  autoProgressLines: 0101010101010101010100
   autoProgressDelay: 1.5
   typingSpeed: 0.05
   voiceSound: {fileID: 8300000, guid: 14abfab17b6b14b4691add23b8e51a83, type: 3}

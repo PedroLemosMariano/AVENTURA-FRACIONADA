@@ -16,8 +16,17 @@ MonoBehaviour:
   npcPortrait: {fileID: 9156713121569858824, guid: 4b23c57c478ac4d4c9a4d8ea4d54e580,
     type: 3}
   dialogueLines:
-  - Oiii !
-  autoProgressLines: 01
+  - "Agora vem a parte que assusta muita gente... dividir fra\xE7\xF5es!"
+  - "Mas se acalme! Eu tenho um truque m\xE1gico que sempre funciona: MULTIPLICAR
+    PELO INVERSO!!"
+  - "Quer ver? Vamos dividir 2/3 \xF7 1/4."
+  - "Inverter a segunda fra\xE7\xE3o: 1/4 vira 4/1."
+  - "Agora fazemos: 2/3 \xD7 4/1 = 8/3."
+  - "\xC9 isso! Dividir vira multiplicar... mas com o segundo n\xFAmero de cabe\xE7a
+    pra baixo! "
+  - "Pronto para a \xFAltima provinha? Bora testar sua coragem no quiz da divis\xE3o!"
+  - "Entre no castelo da divis\xE3o e vamos testar essa sua cabecinha!"
+  autoProgressLines: 0101010101010100
   autoProgressDelay: 1.5
   typingSpeed: 0.05
   voiceSound: {fileID: 8300000, guid: 14abfab17b6b14b4691add23b8e51a83, type: 3}

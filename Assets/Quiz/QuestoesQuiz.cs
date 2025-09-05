@@ -80,7 +80,7 @@ public class QuestoesQuiz : MonoBehaviour
             if (tempoAtual > 0)
             {
                 tempoAtual -= Time.deltaTime;
-                textoTempoRestante.text = "Tempo: " + Mathf.Round(tempoAtual).ToString();
+                textoTempoRestante.text = "" + Mathf.Round(tempoAtual).ToString();
             }
             else
             {
